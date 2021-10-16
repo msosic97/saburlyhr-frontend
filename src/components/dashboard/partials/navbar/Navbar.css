@@ -1,8 +1,8 @@
 .navbar {
     width: 100%;
     min-width: none;
-    height: 3%;
     background-color: white;
+    background-color: #5763ab;
 }
 
 .logoutImg {
@@ -20,5 +20,5 @@ li {
 
 .logout {
     float: right;
-    margin: 0.5% 2%;
+    margin: 1.5% 3%;
 }

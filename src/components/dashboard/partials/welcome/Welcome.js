@@ -3,8 +3,8 @@ import './Welcome.css';
 
 const Welcome = () => {
     return (
-        <div>
-            
+        <div className="welcome">
+            <h1>Welcomeeeeee</h1>
         </div>
     )
 }
