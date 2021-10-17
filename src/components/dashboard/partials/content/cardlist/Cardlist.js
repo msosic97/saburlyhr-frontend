@@ -20,19 +20,14 @@ let cards = [
     },
 ]
 
-let visible
 
-const CardList = (props) => {
-    if (props.isVisible){
-        visible = {
-            display: 'none'
-        }
-    }
+const CardList = () => {
+
     return (
-        <div style={visible} className="cardList">
+        <div className="cardList">
             {cards.map(card => {
                 return(
-                    <Card key={card.id} id={card.id} dateFrom={card.dateFrom} dateTo={card.dateTo} description={card.description} />
+                    <Card key={card.id} card={card} />
                 )
             })}
         </div>

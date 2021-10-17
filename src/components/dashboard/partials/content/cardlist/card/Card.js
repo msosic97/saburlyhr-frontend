@@ -1,12 +1,13 @@
 import React from 'react'
 import './Card.css';
 
-const Card = (props) => {
+const Card = ({card}) => {
+    const {dateFrom, description, dateTo} = card;
     return (
         <div className="card">
-            <p>Date from: {props.dateFrom}</p>
-            <p>Date to: {props.dateTo}</p>
-            <p>Description: {props.description}</p>
+            <p>Date from: {dateFrom}</p>
+            <p>Date to: {dateTo}</p>
+            <p>Description: {description}</p>
         </div>
     )
 }
