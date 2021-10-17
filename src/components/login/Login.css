@@ -25,19 +25,29 @@ body {
     margin: 40px;
 }
 
-.inputFields input{
+.loginInput{
     margin: 10px;
     padding: 0px 10px;
     height: 30px;
-    border-radius: 10px;
+    border-radius: 15px;
     border: 0.5px solid grey;
 }
 
-.button {
-    height: 30px;
+.loginBtn {
+    height: 40px;
     width: 100px;
-    border: 1px solid grey;
+    margin-top: 1rem;
+    border: 2px solid #fff;
     background-color: #5763ab;
     color: #fff;
+    border-radius: 15px;
+}
+
+.loginBtn:hover {
+    height: 40px;
+    width: 100px;
+    border: 2px solid #5763ab;
+    background-color: #fff;
+    color: #5763ab;
     border-radius: 15px;
 }

@@ -1,0 +1,39 @@
+.sidebar {
+    flex-grow: 1;
+    text-align: center;
+    border-right: 2px solid black;
+    min-width: 243.5px;
+}
+
+.sidebar li {
+    display: block;
+    margin: 50px 50px;
+}
+
+.sideParagraph {
+    font-size: 32px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.sideBtn {
+    border-radius: 15px;
+    border: 2px solid #fff;
+    height: 50px;
+    width: 60%;
+    background-color: #5763ab;
+    color: white;
+    font-size: 15px;
+}
+
+.sideBtn:hover {
+    max-width: 238.71px;
+    border-radius: 15px;
+    border: 2px solid #5763ab;
+    height: 50px;
+    width: 60%;
+    background-color: #fff;
+    color: #5763ab;
+    font-size: 15px;
+}
