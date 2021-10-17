@@ -32,7 +32,7 @@ const CardList = (props) => {
         <div style={visible} className="cardList">
             {cards.map(card => {
                 return(
-                    <Card id={card.id} dateFrom={card.dateFrom} dateTo={card.dateTo} description={card.description} />
+                    <Card key={card.id} id={card.id} dateFrom={card.dateFrom} dateTo={card.dateTo} description={card.description} />
                 )
             })}
         </div>
