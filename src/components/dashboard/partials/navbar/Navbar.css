@@ -1,6 +1,7 @@
 .navbar {
     width: 100%;
-    min-width: none;
+    min-width: 353px;
+    min-height: 81px;
     background-color: white;
     background-color: #5763ab;
 }
@@ -20,5 +21,5 @@ li {
 
 .logout {
     float: right;
-    margin: 1.5% 3%;
+    margin: 1% 3% 0% 2%;
 }

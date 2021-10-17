@@ -1,0 +1,68 @@
+.cardForm {
+    flex-grow: 4;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cardF {
+    width: 40%;
+    min-width: 268px;
+}
+
+.formDiv {
+    border-radius: 15px;
+    margin-top: 2%;
+    width: 60%;
+    min-width: 268px;
+    padding: 2%;
+    border: 1px solid black;
+    background-color: #fff; 
+}
+
+.formDiv input {
+    width: 87%;
+    margin: 3%;
+    margin-top: 5%;
+    text-align: center;
+}
+
+.formDiv textarea {
+    width: 90%;
+    margin: 3%;
+    margin-top: 5%;
+}
+
+.cardLabel {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 3%;
+}
+
+.submitDiv {
+    min-width: 268px;
+    justify-self: center;
+}
+
+.submitbtn {
+    margin: 3% auto;
+    border-radius: 15px;
+    border: 2px solid #fff;
+    height: 50px;
+    width: 30%;
+    background-color: #5763ab;
+    color: white;
+    font-size: 15px;
+}
+
+.submitbtn:hover {
+    max-width: 238.71px;
+    border-radius: 15px;
+    border: 2px solid #5763ab;
+    height: 50px;
+    width: 30%;
+    background-color: #fff;
+    color: #5763ab;
+    font-size: 15px;
+}
