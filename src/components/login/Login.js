@@ -9,9 +9,9 @@ const Login = () => {
                     <h1>LOGIN</h1>
                     <p>Please enter your username and password!</p>
                     <div className="inputFields">
-                        <label for="username">Username:</label>
+                        <label>Username:</label>
                         <input className="loginInput" name="username" type="text"/>
-                        <label for="password">Password:</label>
+                        <label>Password:</label>
                         <input className="loginInput" name="password" type="password"/>
                         <input type="submit" value="Login" className="loginBtn"/>
                     </div>

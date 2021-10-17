@@ -2,7 +2,9 @@
     flex-grow: 1;
     text-align: center;
     border-right: 2px solid black;
-    min-width: 243.5px;
+    min-width: 414px;
+    max-width: 414px;
+    max-height: 450px;
 }
 
 .sidebar li {
