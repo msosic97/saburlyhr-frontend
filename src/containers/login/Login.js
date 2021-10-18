@@ -10,9 +10,9 @@ const Login = () => {
                     <p>Please enter your username and password!</p>
                     <div className="inputFields">
                         <label htmlFor="username">Username:</label>
-                        <input id='username' className="loginInput" name="username" type="text"/>
-                        <label>Password:</label>
-                        <input className="loginInput" name="password" type="password"/>
+                        <input id='username' className="loginInput" type="text"/>
+                        <label htmlFor="password">Password:</label>
+                        <input id="password" className="loginInput" type="password"/>
                         <input type="submit" value="Login" className="loginBtn"/>
                     </div>
                 </form>
