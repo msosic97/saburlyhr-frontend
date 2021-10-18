@@ -1,8 +1,8 @@
 import React from "react";
 import './Dashboard.css';
-import Content from "./partials/content/Content";
-import Navbar from "./partials/navbar/Navbar.js";
-import Welcome from "./partials/welcome/Welcome";
+import Content from "../../components/partials/content/Content";
+import Navbar from "../../components/partials/navbar/Navbar";
+import Welcome from "../../components/partials/welcome/Welcome";
 
 const Dashboard = () => {
     return (

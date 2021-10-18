@@ -1,6 +1,6 @@
 import './App.css';
-import Login from '../components/login/Login';
-import Dashboard from '../components/dashboard/Dashboard';
+import Login from '../login/Login';
+import Dashboard from '../dashboard/Dashboard';
 import {
   BrowserRouter as Router,
   Switch,
