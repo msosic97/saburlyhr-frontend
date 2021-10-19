@@ -29,10 +29,11 @@
     text-align: center;
 }
 
-.formDiv textarea {
+.textArea {
     width: 90%;
     margin: 3%;
     margin-top: 5%;
+    resize: none;
 }
 
 .cardLabel {

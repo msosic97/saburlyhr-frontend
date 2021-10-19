@@ -12,7 +12,7 @@ const CardForm = (props) => {
                     <label className="cardLabel">Date to: &nbsp;</label>
                     <input type="date" name="dateTo"/>
                     <label className="cardLabel">Description: &nbsp;</label>
-                    <textarea cols="40" rows="10"></textarea>
+                    <textarea className="textArea" cols="40" rows="10"></textarea>
                 </div>
 
                 <div className="submitDiv">
