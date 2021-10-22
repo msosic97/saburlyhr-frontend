@@ -1,27 +1,21 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Card from './card/Card';
 import './Cardlist.css';
+import axios from 'axios';
 
-
-let cards = [
-    { 
-        id: 1,
-        user: 'Ismail',
-        dateFrom : '28.07.2001',
-        dateTo : '29.07.2001',
-        description: 'Uzivanje'
-    },
-    { 
-        id: 2,
-        user: 'Ismo',
-        dateFrom : '28.08.2001',
-        dateTo : '29.08.2001',
-        description: 'Odmor'
-    },
-]
 
 
 const CardList = () => {
+
+    const [cards, setCards] = useState([])
+
+    useEffect(() => {
+        axios
+            .get('http://localhost:8000/api/cards/')
+            .then(res => {
+                setCards(res.data)})
+            .catch(err => console.log(err))
+    }, [])
 
     return (
         <div className="cardList">

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Switch } from 'react-router';
+import { Route, Switch } from 'react-router-dom';
 import CardForm from './cardform/Cardform';
 import CardList from './cardlist/Cardlist';
 import './Content.css';
@@ -10,8 +10,12 @@ const Content = () => {
         <div className="content">
             <Sidebar />
             <Switch>
-                <Route exact path="/dashboard/cardform/" render={CardForm}/>
-                <Route path="/dashboard/" render={CardList}/>
+                <Route exact path="/dashboard/cardform/">
+                    <CardForm />
+                </Route>
+                <Route path="/dashboard/">
+                    <CardList />
+                </Route>
             </Switch>
         </div>
     )

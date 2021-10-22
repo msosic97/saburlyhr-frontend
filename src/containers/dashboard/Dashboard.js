@@ -1,10 +1,12 @@
-import React from "react";
+import React from 'react';
 import './Dashboard.css';
 import Content from "../../components/partials/content/Content";
 import Navbar from "../../components/partials/navbar/Navbar";
 import Welcome from "../../components/partials/welcome/Welcome";
 
 const Dashboard = () => {
+    
+
     return (
         <div className="dashboard">
             <Navbar />
