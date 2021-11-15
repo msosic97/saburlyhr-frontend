@@ -21,5 +21,11 @@ li {
 
 .logout {
     float: right;
-    margin: 1% 3% 0% 2%;
+    margin: 1% 2% 0% 2%;
+}
+
+@media screen and (max-width:430px) {
+    .logout {
+        margin: 3.5% 2% 0% 2%
+    }
 }

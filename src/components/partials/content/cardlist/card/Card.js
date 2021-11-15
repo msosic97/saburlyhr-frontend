@@ -2,11 +2,11 @@ import React from 'react'
 import './Card.css';
 
 const Card = ({card}) => {
-    const {dateFrom, description, dateTo} = card;
+    const {date_from, description, date_to} = card;
     return (
         <div className="card">
-            <p>Date from: {dateFrom}</p>
-            <p>Date to: {dateTo}</p>
+            <p>Date from: {date_from}</p>
+            <p>Date to: {date_to}</p>
             <p>Description: {description}</p>
         </div>
     )

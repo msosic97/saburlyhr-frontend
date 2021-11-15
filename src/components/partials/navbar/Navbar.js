@@ -7,18 +7,23 @@ import {
   } from "react-router-dom";
 
 const Navbar = () => {
+
+    const logout = () => {
+        localStorage.clear()
+    }
+
     return (
         <div className="navbar">
             <ul className="nav">
                 <li className="logo">
-                    <Link to="/dashboard">
+                    <Link to="/dashboard/">
                         <img className="logoImg" src={logo} alt="logo"/>
                     </Link>
                 </li>
 
                 <li className="logout">
                     <Link to="/">
-                        <img className="logoutImg" src={logologout} alt="logout"/>
+                        <img className="logoutImg" onClick={logout} src={logologout} alt="logout"/>
                     </Link>
                 </li>
             </ul>
