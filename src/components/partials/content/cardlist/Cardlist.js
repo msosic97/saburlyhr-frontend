@@ -18,7 +18,7 @@ const CardList = () => {
     }     
         axios.get(url, config)
         .then(response => {
-            setCards(response.data)
+            setCards(response.data.reverse())
             setIN(true)
         })
         .catch(err => console.log(err))

@@ -1,13 +1,11 @@
 import axios from 'axios'
 import React, {useState} from 'react'
 import './Cardform.css'
-import getUser from './user-service'
 
 const CardForm = (props) => {
 
     const url = 'http://localhost:8000/api/cards/'
     const [data, setData] = useState({
-        user: "",
         date_from: "",
         date_to: "",
         description: ""
@@ -20,7 +18,6 @@ const CardForm = (props) => {
             headers: { Authorization: `Bearer ${token}` }
         };
         axios.post(url, {
-            user: getUser(),
             date_from: data.date_from,
             date_to: data.date_to,
             description: data.description
