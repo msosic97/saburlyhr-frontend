@@ -11,7 +11,7 @@ const Dashboard = () => {
 
 
     if(token === null){
-        window.location.replace("http://localhost:3000/")
+        window.location.replace("https://kind-wozniak-cfcd11.netlify.app/")
     }
 
     return (

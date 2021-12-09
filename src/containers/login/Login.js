@@ -17,7 +17,7 @@ const Login = () => {
 
     const submitHandler = (event) => {
         event.preventDefault()
-        const url = 'http://localhost:8000/api/token/'
+        const url = 'https://shrb2.herokuapp.com/api/token/'
         postData(url, credentials)
         .then(response => {
             localStorage.setItem('token', response.access)
@@ -25,10 +25,10 @@ const Login = () => {
         })
         setTimeout(() => {
             if (localStorage.getItem('token') !== "undefined"){
-                window.location.replace("http://localhost:3000/dashboard/cardlist")
+                window.location.replace("https://kind-wozniak-cfcd11.netlify.app/dashboard/cardlist")
             }
             else {
-                window.location.replace("http://localhost:3000/")
+                window.location.replace("https://kind-wozniak-cfcd11.netlify.app/")
             }
     }, 1000)
         

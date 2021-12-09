@@ -4,7 +4,7 @@ import './Cardform.css'
 
 const CardForm = (props) => {
 
-    const url = 'http://localhost:8000/api/cards/'
+    const url = 'https://shrb2.herokuapp.com/api/cards/'
     const [data, setData] = useState({
         date_from: "",
         date_to: "",
@@ -24,7 +24,7 @@ const CardForm = (props) => {
         },
             config
         )
-        window.location.replace("http://localhost:3000/dashboard/cardlist/")
+        window.location.replace("https://kind-wozniak-cfcd11.netlify.app/dashboard/cardlist/")
     }
 
 
