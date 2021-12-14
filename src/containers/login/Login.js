@@ -1,5 +1,5 @@
 import React, { useState} from 'react';
-import { Redirect } from 'react-router-dom';
+import { Redirect, useHistory } from 'react-router-dom';
 import postData from './api-service';
 import './Login.css';
 
@@ -25,11 +25,12 @@ const Login = () => {
             localStorage.setItem('refresh-token', response.refresh)
         })
         setTimeout(() => {
+            let history = useHistory()
             if (localStorage.getItem('token') !== "undefined"){
-                <Redirect to="/dashboard/cardlist"/>
+                history.push("/dashboard")
             }
             else {
-                <Redirect to="/"/>
+                history.push("/")
             }
     }, 1000)
         
