@@ -17,7 +17,6 @@ const Login = () => {
 
 
     const submitHandler = (event) => {
-        let history = useHistory()
         event.preventDefault()
         const url = 'https://shrb2.herokuapp.com/api/token/'
         postData(url, credentials)
@@ -28,10 +27,10 @@ const Login = () => {
         setTimeout(() => {
             
             if (localStorage.getItem('token') !== "undefined"){
-                history.push("/dashboard")
+                return <Navigate to='/dashboard'/>
             }
             else {
-                history.push("/")
+                return <Navigate to='/'/>
             }
     }, 1000)
         
