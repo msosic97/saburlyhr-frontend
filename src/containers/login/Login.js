@@ -17,6 +17,7 @@ const Login = () => {
 
 
     const submitHandler = (event) => {
+        let history = useHistory()
         event.preventDefault()
         const url = 'https://shrb2.herokuapp.com/api/token/'
         postData(url, credentials)
@@ -25,7 +26,7 @@ const Login = () => {
             localStorage.setItem('refresh-token', response.refresh)
         })
         setTimeout(() => {
-            let history = useHistory()
+            
             if (localStorage.getItem('token') !== "undefined"){
                 history.push("/dashboard")
             }
