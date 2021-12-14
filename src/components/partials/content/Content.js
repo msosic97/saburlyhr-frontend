@@ -10,10 +10,10 @@ const Content = () => {
         <div className="content">
             <Sidebar />
             <Switch>
-                <Route exact path="/dashboard/cardform/">
+                <Route exact path="/dashboard/cardform">
                     <CardForm />
                 </Route>
-                <Route path="/dashboard/">
+                <Route path="/dashboard">
                     <CardList />
                 </Route>
             </Switch>

@@ -24,7 +24,7 @@ const CardForm = (props) => {
         },
             config
         )
-        window.location.replace("https://kind-wozniak-cfcd11.netlify.app/dashboard/cardlist/")
+        window.location.replace("https://kind-wozniak-cfcd11.netlify.app/dashboard/cardlist")
     }
 
 
