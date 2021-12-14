@@ -1,4 +1,5 @@
 import React, { useState} from 'react';
+import { Redirect } from 'react-router-dom';
 import postData from './api-service';
 import './Login.css';
 
@@ -25,10 +26,10 @@ const Login = () => {
         })
         setTimeout(() => {
             if (localStorage.getItem('token') !== "undefined"){
-                window.location.replace("https://kind-wozniak-cfcd11.netlify.app/dashboard/cardlist")
+                <Redirect to="/dashboard/cardlist"/>
             }
             else {
-                window.location.replace("https://kind-wozniak-cfcd11.netlify.app/")
+                <Redirect to="/"/>
             }
     }, 1000)
         
