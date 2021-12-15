@@ -7,6 +7,11 @@ import {
   } from "react-router-dom";
 
 const Navbar = () => {
+
+    const deleteToken = () => {
+        localStorage.clear()
+    }
+
     return (
         <div className="navbar">
             <ul className="nav">
@@ -16,7 +21,7 @@ const Navbar = () => {
                     </Link>
                 </li>
 
-                <li className="logout">
+                <li className="logout" onClick={}>
                     <Link to="/">
                         <img className="logoutImg" src={logologout} alt="logout"/>
                     </Link>
