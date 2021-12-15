@@ -1,5 +1,5 @@
 import React, { useState} from 'react';
-import { Navigate } from 'react-router-dom';
+import { Navigate, Redirect } from 'react-router-dom';
 import postData from './api-service';
 import './Login.css';
 
@@ -25,20 +25,20 @@ const Login = () => {
             localStorage.setItem('refresh-token', response.refresh)
         })            
             if (localStorage.getItem('token') !== "undefined"){
-                toDashboard()
+                return toDashboard()
             }
             else {
-                toLogin()
+                return toLogin()
             }
         
     }
 
     const toDashboard = () => {
-        return <Navigate to='/dashboard'/>
+        return <Redirect to='/dashboard'/>
     }
 
     const toLogin = () => {
-        return <Navigate to='/'/>
+        return <Redirect to='/'/>
     }
 
     return (
