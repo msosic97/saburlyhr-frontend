@@ -24,22 +24,8 @@ const Login = () => {
             localStorage.setItem('token', response.access)
             localStorage.setItem('refresh-token', response.refresh)
         })            
-            if (localStorage.getItem('token') !== "undefined"){
-                return toDashboard()
-            }
-            else {
-                return toLogin()
-            }
-        
     }
 
-    const toDashboard = () => {
-        return <Redirect to='/dashboard'/>
-    }
-
-    const toLogin = () => {
-        return <Redirect to='/'/>
-    }
 
     return (
         <div className="login" >
