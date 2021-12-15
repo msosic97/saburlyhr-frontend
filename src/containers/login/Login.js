@@ -23,20 +23,23 @@ const Login = () => {
         .then(response => {
             localStorage.setItem('token', response.access)
             localStorage.setItem('refresh-token', response.refresh)
-        })
-        setTimeout(() => {
-            
+        })            
             if (localStorage.getItem('token') !== "undefined"){
-                return <Navigate to='/dashboard'/>
+                toDashboard()
             }
             else {
-                return <Navigate to='/'/>
+                toLogin()
             }
-    }, 1000)
         
     }
 
+    const toDashboard = () => {
+        return <Navigate to='/dashboard'/>
+    }
 
+    const toLogin = () => {
+        return <Navigate to='/'/>
+    }
 
     return (
         <div className="login" >
