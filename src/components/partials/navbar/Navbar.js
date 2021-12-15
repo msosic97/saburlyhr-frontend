@@ -21,7 +21,7 @@ const Navbar = () => {
                     </Link>
                 </li>
 
-                <li className="logout" onClick={}>
+                <li className="logout" onClick={deleteToken}>
                     <Link to="/">
                         <img className="logoutImg" src={logologout} alt="logout"/>
                     </Link>
