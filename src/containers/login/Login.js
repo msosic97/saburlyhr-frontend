@@ -21,7 +21,6 @@ const Login = () => {
         postData(url, credentials)
         .then(response => {
             localStorage.setItem('token', response.access)
-            localStorage.setItem('refresh-token', response.refresh)
         })
         setTimeout(() => {
             if (localStorage.getItem('token') !== "undefined"){
